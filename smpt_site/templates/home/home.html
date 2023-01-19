@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="with-device-with, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<ul>
+    {% for of in fabrication_orders %}
+        <li><a href="{% url 'labels:of' pk=of.id %}">{{ of.fabrication_order }}</a> - <a href="{% url 'labels:delete_of' pk=of.id %}">Delete</a></li>
+        
+    {% endfor %}
+</ul>
+<br/>
+<a href="{% url 'labels:create_of' %}">Create OF</a></br>
+<a href="{% url 'labels:create_labels' %}">Create Labels</a>
+</body>

@@ -1,0 +1,15 @@
+Aplicaciones:
+    - Usuarios
+    - Labels
+
+
+Models:
+
+    Articles:
+        -
+
+    Clients:
+        -
+
+    FabricationOrders:
+        -
