@@ -10,5 +10,3 @@ urlpatterns = [
     path('delete_of/<pk>', views.DeleteOF.as_view(), name='delete_of'),
     path('create_labels', views.CreateLabels.as_view(), name='create_labels'),
 ]
-
-#comment
